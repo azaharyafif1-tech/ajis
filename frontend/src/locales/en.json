@@ -1,0 +1,100 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit"
+  },
+  "nav": {
+    "home": "Home",
+    "categories": "Categories",
+    "howItWorks": "How It Works",
+    "login": "Login",
+    "register": "Register",
+    "profile": "Profile",
+    "dashboard": "Dashboard",
+    "orders": "Orders",
+    "messages": "Messages",
+    "logout": "Logout"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register Account",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "fullName": "Full Name",
+    "username": "Username",
+    "location": "Location",
+    "languages": "Languages",
+    "isFreelancer": "I am a freelancer",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?"
+  },
+  "categories": {
+    "graphicDesign": "Graphic & Design",
+    "digitalMarketing": "Digital Marketing",
+    "writingTranslation": "Writing & Translation",
+    "videoAnimation": "Video & Animation",
+    "musicAudio": "Music & Audio",
+    "programming": "Programming & Tech",
+    "business": "Business",
+    "lifestyle": "Lifestyle"
+  },
+  "gig": {
+    "title": "Title",
+    "description": "Description",
+    "category": "Category",
+    "subcategory": "Subcategory",
+    "tags": "Tags",
+    "packages": "Packages",
+    "basic": "Basic",
+    "standard": "Standard",
+    "premium": "Premium",
+    "price": "Price",
+    "deliveryTime": "Delivery Time",
+    "features": "Features",
+    "days": "days",
+    "startingAt": "Starting at",
+    "orderNow": "Order Now",
+    "contactSeller": "Contact Seller"
+  },
+  "order": {
+    "requirements": "Requirements",
+    "status": "Status",
+    "pending": "Pending",
+    "active": "Active",
+    "delivered": "Delivered",
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "dispute": "Dispute",
+    "expectedDelivery": "Expected Delivery",
+    "paymentMethod": "Payment Method"
+  },
+  "payment": {
+    "fpx": "FPX Online Banking",
+    "grabpay": "GrabPay",
+    "tng": "Touch 'n Go eWallet",
+    "boost": "Boost",
+    "creditCard": "Credit Card"
+  },
+  "profile": {
+    "about": "About",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "reviews": "Reviews",
+    "rating": "Rating",
+    "completedOrders": "Completed Orders",
+    "memberSince": "Member Since"
+  }
+}

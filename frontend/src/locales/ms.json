@@ -1,0 +1,100 @@
+{
+  "common": {
+    "loading": "Memuatkan...",
+    "error": "Ralat",
+    "success": "Berjaya",
+    "save": "Simpan",
+    "cancel": "Batal",
+    "delete": "Padam",
+    "edit": "Edit",
+    "search": "Cari",
+    "filter": "Tapis",
+    "sort": "Susun",
+    "next": "Seterusnya",
+    "previous": "Sebelumnya",
+    "submit": "Hantar"
+  },
+  "nav": {
+    "home": "Utama",
+    "categories": "Kategori",
+    "howItWorks": "Cara Beroperasi",
+    "login": "Log Masuk",
+    "register": "Daftar",
+    "profile": "Profil",
+    "dashboard": "Dashboard",
+    "orders": "Pesanan",
+    "messages": "Mesej",
+    "logout": "Log Keluar"
+  },
+  "auth": {
+    "login": "Log Masuk",
+    "register": "Daftar Akaun",
+    "email": "E-mel",
+    "password": "Kata Laluan",
+    "confirmPassword": "Sahkan Kata Laluan",
+    "fullName": "Nama Penuh",
+    "username": "Nama Pengguna",
+    "location": "Lokasi",
+    "languages": "Bahasa",
+    "isFreelancer": "Saya adalah freelancer",
+    "forgotPassword": "Lupa kata laluan?",
+    "noAccount": "Tiada akaun?",
+    "hasAccount": "Sudah ada akaun?"
+  },
+  "categories": {
+    "graphicDesign": "Grafik & Reka Bentuk",
+    "digitalMarketing": "Pemasaran Digital",
+    "writingTranslation": "Penulisan & Terjemahan",
+    "videoAnimation": "Video & Animasi",
+    "musicAudio": "Muzik & Audio",
+    "programming": "Pengaturcaraan & Teknologi",
+    "business": "Perniagaan",
+    "lifestyle": "Gaya Hidup"
+  },
+  "gig": {
+    "title": "Tajuk",
+    "description": "Perihalan",
+    "category": "Kategori",
+    "subcategory": "Subkategori",
+    "tags": "Tag",
+    "packages": "Pakej",
+    "basic": "Asas",
+    "standard": "Standard",
+    "premium": "Premium",
+    "price": "Harga",
+    "deliveryTime": "Masa Penghantaran",
+    "features": "Ciri-ciri",
+    "days": "hari",
+    "startingAt": "Bermula dari",
+    "orderNow": "Pesan Sekarang",
+    "contactSeller": "Hubungi Penjual"
+  },
+  "order": {
+    "requirements": "Keperluan",
+    "status": "Status",
+    "pending": "Menunggu",
+    "active": "Aktif",
+    "delivered": "Dihantar",
+    "completed": "Selesai",
+    "cancelled": "Dibatalkan",
+    "dispute": "Pertikaian",
+    "expectedDelivery": "Jangkaan Penghantaran",
+    "paymentMethod": "Kaedah Pembayaran"
+  },
+  "payment": {
+    "fpx": "FPX Online Banking",
+    "grabpay": "GrabPay",
+    "tng": "Touch 'n Go eWallet",
+    "boost": "Boost",
+    "creditCard": "Kad Kredit"
+  },
+  "profile": {
+    "about": "Tentang",
+    "skills": "Kemahiran",
+    "portfolio": "Portfolio",
+    "reviews": "Ulasan",
+    "rating": "Penilaian",
+    "completedOrders": "Pesanan Selesai",
+    "memberSince": "Ahli Sejak"
+  }
+}

@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  # MongoDB Database
+  mongodb:
+    image: mongo:7.0
+    container_name: ajis-mongodb
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: ajis_mongodb_password
+      MONGO_INITDB_DATABASE: ajis
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - ajis-network
+
+  # Backend API
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: ajis-backend
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 5000
+      MONGODB_URI: mongodb://admin:ajis_mongodb_password@mongodb:27017/ajis?authSource=admin
+      JWT_SECRET: ${JWT_SECRET:-ajis-production-jwt-secret-change-in-production}
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongodb
+    networks:
+      - ajis-network
+    volumes:
+      - ./backend/uploads:/app/uploads
+
+  # Frontend Web App
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: ajis-frontend
+    restart: unless-stopped
+    environment:
+      REACT_APP_API_URL: http://localhost:5000/api
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - ajis-network
+
+volumes:
+  mongodb_data:
+    driver: local
+
+networks:
+  ajis-network:
+    driver: bridge
