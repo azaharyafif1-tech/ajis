@@ -1,0 +1,29 @@
+{
+  "name": "ajis-marketplace",
+  "version": "1.0.0",
+  "description": "Malaysian Freelance Marketplace - A Fiverr-like platform for Malaysia",
+  "scripts": {
+    "install:frontend": "cd frontend && npm install --legacy-peer-deps",
+    "install:backend": "cd backend && npm install",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "build:all": "npm run build:backend && npm run build:frontend",
+    "dev:frontend": "cd frontend && npm start",
+    "dev:backend": "cd backend && npm run dev",
+    "start:frontend": "cd frontend && npm start",
+    "start:backend": "cd backend && npm start",
+    "seed": "cd backend && npm run seed"
+  },
+  "keywords": [
+    "freelance",
+    "marketplace",
+    "malaysia",
+    "fiverr",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "MIT"
+}
