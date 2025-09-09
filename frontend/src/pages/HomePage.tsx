@@ -22,6 +22,9 @@ import {
   Edit,
   Smartphone,
   CameraAlt,
+  AutoAwesome,
+  Psychology,
+  Rocket,
 } from '@mui/icons-material';
 import { useTranslation } from 'react-i18next';
 import { categoriesAPI, servicesAPI } from '../api';
@@ -165,6 +168,73 @@ const HomePage: React.FC = () => {
       </Box>
 
       <Container maxWidth="lg" sx={{ py: 6 }}>
+        {/* AI Website Builder Feature Highlight */}
+        <Box sx={{ mb: 8 }}>
+          <Card
+            sx={{
+              background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
+              color: 'white',
+              textAlign: 'center',
+              p: 4,
+              borderRadius: 3,
+              boxShadow: '0 10px 30px rgba(99, 102, 241, 0.3)',
+            }}
+          >
+            <Box sx={{ display: 'flex', justifyContent: 'center', mb: 2 }}>
+              <AutoAwesome sx={{ fontSize: 60, mr: 2 }} />
+              <Psychology sx={{ fontSize: 60 }} />
+            </Box>
+            <Typography variant="h3" component="h2" gutterBottom sx={{ fontWeight: 'bold' }}>
+              NEW: AI Website Builder
+            </Typography>
+            <Typography variant="h6" sx={{ mb: 4, opacity: 0.9 }}>
+              Create stunning websites in minutes with the power of AI
+            </Typography>
+            <Typography variant="body1" sx={{ mb: 4, maxWidth: 600, mx: 'auto' }}>
+              Describe your dream website and let our AI (powered by ChatGPT & Gemini) generate 
+              beautiful, responsive, and functional websites instantly. No coding required!
+            </Typography>
+            <Box sx={{ display: 'flex', gap: 2, justifyContent: 'center', flexWrap: 'wrap' }}>
+              <Button
+                variant="contained"
+                size="large"
+                startIcon={<Rocket />}
+                component={Link}
+                to="/ai-builder"
+                sx={{
+                  backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                  color: 'white',
+                  '&:hover': {
+                    backgroundColor: 'rgba(255, 255, 255, 0.3)',
+                  },
+                  backdropFilter: 'blur(10px)',
+                  border: '1px solid rgba(255, 255, 255, 0.3)',
+                  px: 4,
+                  py: 1.5,
+                }}
+              >
+                Try AI Builder Now
+              </Button>
+              <Button
+                variant="outlined"
+                size="large"
+                sx={{
+                  color: 'white',
+                  borderColor: 'rgba(255, 255, 255, 0.5)',
+                  '&:hover': {
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    borderColor: 'white',
+                  },
+                  px: 4,
+                  py: 1.5,
+                }}
+              >
+                Watch Demo
+              </Button>
+            </Box>
+          </Card>
+        </Box>
+
         {/* Categories Section */}
         <Box sx={{ mb: 8 }}>
           <Typography variant="h3" component="h2" gutterBottom align="center">

@@ -11,6 +11,7 @@ import userRoutes from './routes/users';
 import serviceRoutes from './routes/services';
 import categoryRoutes from './routes/categories';
 import messageRoutes from './routes/messages';
+import aiBuilderRoutes from './routes/ai-builder';
 
 dotenv.config();
 
@@ -40,6 +41,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/services', serviceRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/messages', messageRoutes);
+app.use('/api/ai-builder', aiBuilderRoutes);
 
 // Socket.io for real-time messaging
 io.on('connection', (socket) => {
