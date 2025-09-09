@@ -14,6 +14,7 @@ import {
   Language,
   Message,
   Work,
+  AutoAwesome,
 } from '@mui/icons-material';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
@@ -78,6 +79,21 @@ const Navbar: React.FC = () => {
             startIcon={<Work />}
           >
             {t('services')}
+          </Button>
+
+          <Button
+            color="inherit"
+            component={Link}
+            to="/ai-builder"
+            startIcon={<AutoAwesome />}
+            sx={{
+              backgroundColor: 'rgba(255, 255, 255, 0.1)',
+              '&:hover': {
+                backgroundColor: 'rgba(255, 255, 255, 0.2)',
+              },
+            }}
+          >
+            AI Builder
           </Button>
 
           <Button

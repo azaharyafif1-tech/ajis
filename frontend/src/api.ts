@@ -67,4 +67,21 @@ export const messagesAPI = {
     api.post(`/messages/conversations/${conversationId}/messages`, { content, attachments }),
 };
 
+// AI Builder API
+export const aiBuilderAPI = {
+  generateWebsite: (data: {
+    description: string;
+    type?: string;
+    features?: string[];
+  }) => api.post('/ai-builder/generate', data),
+  
+  generateWithGemini: (data: {
+    description: string;
+    type?: string;
+    features?: string[];
+  }) => api.post('/ai-builder/generate-gemini', data),
+  
+  getHistory: () => api.get('/ai-builder/history'),
+};
+
 export default api;
